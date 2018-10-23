@@ -1,0 +1,9 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <button *ng-if="auth.hasSignedIn() === false" (click)="onLoginClick()">login</button>
+</ion-content>
